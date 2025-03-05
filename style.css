@@ -3,6 +3,7 @@
 }
 body{
   margin: 0;
+  background-image: url(./assers/img/textur-gas-kvas-com-xn4v-p-tekstura-chernaya-pikselnaya-1.jpg);
   font-family: rubik, Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -48,7 +49,7 @@ figcaption{
 }
 .inf{
     display: inline-block;
-    
+    text-align: center;
     width: 40px;
     height: 40px;
     padding: 3px;

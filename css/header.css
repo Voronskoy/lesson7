@@ -1,8 +1,8 @@
 .main-header{
 height: 300px;
 padding-top: 100px;
-/* background-color:aqua; */
-background-image: url(./../assers/img/Снимок\ экрана_28-1-2025_112012_static.wikia.nocookie.net.jpeg), 
+background-color:rgb(113, 198, 252);
+background-image: url(./../assers/img/Без\ названия.jpg), 
 linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,244,255,1) 35%, rgba(0,212,255,1) 100%);
 background-repeat: repeat-x, no-repeat;
 background-position: 0 120px;
@@ -22,6 +22,7 @@ margin: 0;
 .menu-main-item{
     display: inline-block;
     margin: 0 1.2em;
+    position: relative;
 
 }
 .menu-main-item>a{
@@ -33,4 +34,28 @@ margin: 0;
 
 .menu-main-item>a:hover{
     text-decoration: underline;
+}
+.menu-main-item:hover>.submenu{
+    display: block;
+    
+}
+.submenu{
+    display: none;
+    list-style: none;
+    padding: 7px;
+    background-color:white;
+    position: absolute;
+}
+.submenu-item{
+  
+}
+.submenu-link{
+ 
+ display: block;
+ padding: 5px 9px;
+ text-transform: capitalize;
+ color:black;
+}
+.submenu-link:hover{
+ background-color: gray;
 }
