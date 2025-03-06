@@ -4,8 +4,8 @@ padding-top: 100px;
 background-color:rgb(113, 198, 252);
 background-image: url(./../assers/img/Без\ названия.jpg), 
 linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,244,255,1) 35%, rgba(0,212,255,1) 100%);
-background-repeat: repeat-x, no-repeat;
-background-position: 0 120px;
+background-repeat: repeat-x, repeat-x, no-repeat;
+background-position: bottom left, 0 120px, 0 0;
 }
 main{
     margin-top: -140px;
@@ -41,13 +41,32 @@ margin: 0;
 }
 .submenu{
     display: none;
+    width: 200%; 
+    min-width: 150px;
+    max-width: 200px;
+    position: absolute;
+    left: -50%;
     list-style: none;
     padding: 7px;
     background-color:white;
-    position: absolute;
+}
+.left0{
+    left: 0;
+}
+.left-10{
+    left: -10%;
+}
+.left-90{
+    left: -90%;
 }
 .submenu-item{
+    position: relative;
   
+}
+.submenu-item:hover>.submenu{
+    display: block;
+    left: 100%;
+    top: 0;
 }
 .submenu-link{
  
@@ -56,6 +75,8 @@ margin: 0;
  text-transform: capitalize;
  color:black;
 }
+.submenu-link:hover>.submenu-link,
 .submenu-link:hover{
  background-color: gray;
+ color:blue;
 }
