@@ -1,8 +1,8 @@
 .main-header{
 height: 300px;
 padding-top: 100px;
-background-color:rgb(113, 198, 252);
-background-image: url(./../assers/img/Без\ названия.jpg), 
+background-color:rgb(75, 206, 253);
+background-image: url(./../assers/img/Light_background_deepslate_transition.png),
 linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,244,255,1) 35%, rgba(0,212,255,1) 100%);
 background-repeat: repeat-x, repeat-x, no-repeat;
 background-position: bottom left, 0 120px, 0 0;
