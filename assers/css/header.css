@@ -2,8 +2,8 @@
 height: 300px;
 padding-top: 100px;
 background-color:rgb(75, 206, 253);
-background-image: url(./../assers/img/Light_background_deepslate_transition.png),
-linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,244,255,1) 35%, rgba(0,212,255,1) 100%);
+background-image: url(./../assers/img/Light_background_deepslate_transition.png), url(./../assers/img/Light_background_grass.png),
+linear-gradient(0deg, rgba(47,9,4,1) 28%, rgba(192,244,255,1) 50%, rgba(129,199,255,1) 100%);
 background-repeat: repeat-x, repeat-x, no-repeat;
 background-position: bottom left, 0 120px, 0 0;
 }
@@ -18,12 +18,30 @@ main{
 .menu-main{
 list-style: none;
 margin: 0;
+font-size: 12px;
 }
 .menu-main-item{
     display: inline-block;
     margin: 0 1.2em;
     position: relative;
-
+    padding-bottom: 50px;
+}
+.menu-main-item::after{
+    content: '\25BC'
+}
+.menu-main-item:hover::after{
+    content: '\25B2'
+}
+.menu-main-item > .submenu::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    top: -24px;
+    left: 42%;
 }
 .menu-main-item>a{
     color: black;
@@ -41,14 +59,16 @@ margin: 0;
 }
 .submenu{
     display: none;
-    width: 200%; 
+    width: 100%; 
     min-width: 150px;
     max-width: 200px;
     position: absolute;
+    top: 30px;
     left: -50%;
     list-style: none;
     padding: 7px;
     background-color:white;
+    font-size: 14px;
 }
 .left0{
     left: 0;
@@ -63,13 +83,18 @@ margin: 0;
     position: relative;
   
 }
+.submenu-item:has(>.submenu)::after{
+    content: '\1433';
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
 .submenu-item:hover>.submenu{
     display: block;
     left: 100%;
     top: 0;
 }
 .submenu-link{
- 
  display: block;
  padding: 5px 9px;
  text-transform: capitalize;
@@ -79,4 +104,16 @@ margin: 0;
 .submenu-link:hover{
  background-color: gray;
  color:blue;
+}
+.explore::before{
+    content:url(./../icon/78e60de8-0f72-4038-9e2a-873a89df1ab3.svg);
+    display: inline-block;
+    width: 14px;
+    transform: translate(-5px, 2px);
+}
+.home::before{
+    content: url(./../icon/6c3468de-2a2e-483f-8e53-1fa0989a5a89.svg);
+    display: inline-block;
+    width: 16px;
+    transform: translate(-3px, 2px);
 }
