@@ -9,46 +9,75 @@
       type="image/x-icon"
     />
     <title>Register - MinecraftWiki</title>
-    <link rel="stylesheet" href="./register.css" />
+    <link rel="stylesheet" href="./../assers/css/register.css" />
   </head>
   <body>
-    <a href="">back</a>
-    <section class="wrapper">
-      <header>
-        <h1>Join FAnDOm Today</h1>
-        <p>
-          already have an account?
-          <a href="">Sign in</a>
-        </p>
-      </header>
+    <div class="out-wrapper">
+      <a href="./../index.html">back</a>
+      <section class="wrapper">
+        <header>
+          <h1>Join FAnDOm Today</h1>
+          <p>
+            already have an account?
+            <a href="">Sign in</a>
+          </p>
+        </header>
 
-      <div class="flex-container">
-        <div class="social">
-          <h2>Connect a Social Account</h2>
-          <ul>
-            <li><a href="">connect with facebook</a></li>
-            <li><a href="">connect with google</a></li>
-            <li><a href="">connect with twich</a></li>
-            <li><a href="">connect with apple</a></li>
-          </ul>
+        <div class="flex-container">
+          <div class="social">
+            <h2>Connect a Social Account</h2>
+            <ul>
+              <li><a href="">connect with facebook</a></li>
+              <li><a href="">connect with google</a></li>
+              <li><a href="">connect with twich</a></li>
+              <li><a href="">connect with apple</a></li>
+            </ul>
+          </div>
+          <form action="" class="register">
+            <h2>Register with Email</h2>
+            <label>
+              <input name="email" type="email" placeholder="email" required />
+            </label>
+            <label>
+              <input
+                name="username"
+                type="username"
+                placeholder="username"
+                required
+              />
+            </label>
+            <label>
+              <input
+                name="password"
+                type="password"
+                placeholder="password"
+                required
+              />
+            </label>
+            <label>
+              <input name="date" type="date" />
+            </label>
+            <label>
+              <input
+                name="subscribe"
+                type="checkbox"
+                checked
+                value="subscribe"
+              />
+              <span>Email me about Fanom NEws and events</span>
+            </label>
+            <label>
+              <input name="agree" type="checkbox" checked />
+              <span>I agree to:</span>
+            </label>
+            <ul>
+              <li><a href="" target="_blank">FAndoms TErns of Use</a></li>
+              <li><a href="" target="_blank">Privacy polisy</a></li>
+            </ul>
+            <input type="submit" value="REGISTER" disabled />
+          </form>
         </div>
-        <form action="" class="register">
-          <h2>Register with Email</h2>
-          <label>
-            <input name="email" type="email" placeholder="email"/>
-        </label>
-        <label>
-            <input name="username" type="username" placeholder="username"/>
-        </label>
-        <label>
-            <input name="password" type="password" placeholder="password"/>
-        </label>
-        <label>
-            <input name="date" type="date"/>
-        </label>
-        <input type="submit" value="REGISTER"/>
-        </form>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

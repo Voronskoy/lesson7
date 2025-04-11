@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+a{
+    color: inherit;
+}
+.out-wrapper{
+    min-height: 100vh;
+    background-color:antiquewhite;
+    font-family: sans-serif;
+}
+.wrapper{
+    min-width: 720px;
+    width: 45%;
+    margin: auto;
+    background-color:white;
+}
+.header{
+    background-color:indigo;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
