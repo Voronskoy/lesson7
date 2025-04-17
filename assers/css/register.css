@@ -21,3 +21,46 @@ a{
     text-align: center;
     padding: 20px 0;
 }
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.social, .register{
+    padding: 20px 0;
+    width: 50%;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+}
+.social>ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+.btn{
+    display: block;
+    background-color:black;
+    color:aliceblue;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.fb{
+    background-color:#1253f7;
+}
+.google{
+    background-color:rgb(86, 119, 228);
+}
+.twich{
+    background-color:rgb(192, 0, 217);
+
+}
+.apple{
+    background-color:black;
+
+}
