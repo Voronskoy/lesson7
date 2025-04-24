@@ -10,7 +10,7 @@ a{
     font-family: sans-serif;
 }
 .wrapper{
-    min-width: 720px;
+    min-width: 576px;
     width: 45%;
     margin: auto;
     background-color:white;
@@ -28,7 +28,7 @@ a{
 }
 .social, .register{
     padding: 20px 0;
-    width: 50%;
+    width: 90%;
 }
 .register{
     display: flex;
@@ -63,4 +63,30 @@ a{
 .apple{
     background-color:black;
 
+}
+@media screen and (min-width: 1200px){
+    .wrapper{
+        width: 70%;
+        /* background-color:blanchedalmond; */
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    .wrapper{
+        width: 88%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .wrapper{
+        width: 96%;
+    }
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social, .register{
+        width: 90%;
+        padding: 20px 0;
+    }
 }
